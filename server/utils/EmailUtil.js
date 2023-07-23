@@ -49,7 +49,7 @@ const EmailUtil = {
       <h1 style="color: #3366cc; font-size: 24px; font-weight: bold; text-align: center;">Thanks for signing up</h1>
       <h1 style="font-size: 16px; text-align: center;"">Please click the button below to activate your account</h1>
       <p style="text-align: center;">
-        <a href="http://localhost:3002/account/active/${id}/${token}" 
+        <a href="https://shoppeda.onrender.com/account/active/${id}/${token}" 
           style="display: inline-block; padding: 12px 24px; background-color: #3366cc; color: #fff; text-decoration: none; font-size: 16px; border-radius: 4px;">
           Activate Account
         </a>
