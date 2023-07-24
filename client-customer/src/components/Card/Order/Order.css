@@ -1,5 +1,5 @@
 .wishcard {
-    width: 90%;
+    width: 95%;
     min-height: 100px;
     height: auto;
     display: flex;
@@ -9,7 +9,7 @@
     flex-wrap: wrap;
     position: relative;
     background-color: rgb(255, 255, 255);
-    margin: 10px auto;
+    margin: 10px 10px;
 }
 
 /* .wishcard > div {

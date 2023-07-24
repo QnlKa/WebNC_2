@@ -83,7 +83,7 @@ const Detail = (props) => {
                   ]}
                   onClick={handleAddToCart}
                 >
-                  ADD TO BAG
+                  ADD TO CART
                 </Button>
               </div>
               <div className="add__wish">
