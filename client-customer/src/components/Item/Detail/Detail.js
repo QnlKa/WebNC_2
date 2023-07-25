@@ -33,7 +33,7 @@ const Detail = (props) => {
     wishItems.addItem(props.item);
   };
   const handleAddToCart = () => {
-    cartItems.addItem(props.item, 1);
+    cartItems.addItem(props.item, quantity);
   };
   return (
     <div className="product__detail__container">
@@ -49,14 +49,14 @@ const Detail = (props) => {
         <form className="product__form">
           <div className="product__quantity__and__size">
             <div className="product__quantity">
-              <IconButton onClick={handelQuantityIncrement}>
-                <AddCircleIcon />
+              <IconButton onClick={handelQuantityDecrement}>
+                <RemoveCircleIcon fontSize="medium" />
               </IconButton>
               <div type="text" name="quantity" className="quantity__input">
                 {quantity}
               </div>
-              <IconButton onClick={handelQuantityDecrement}>
-                <RemoveCircleIcon fontSize="medium" />
+              <IconButton onClick={handelQuantityIncrement}>
+                <AddCircleIcon />
               </IconButton>
             </div>
           </div>
