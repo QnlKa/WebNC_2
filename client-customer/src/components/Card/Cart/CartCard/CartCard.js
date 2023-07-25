@@ -14,7 +14,7 @@ import RemoveCircleIcon from "@mui/icons-material/RemoveCircle";
 const CartCard = (props) => {
   let cartItems = useContext(CartItemsContext);
   console.log(cartItems);
-    
+
   const handelQuantityIncrement = (event) => {
     cartItems.quantity(props.item._id, "INC");
   };
@@ -42,14 +42,14 @@ const CartCard = (props) => {
         <div className="cart__item__name">{props.item.name}</div>
       </div>
       <div className="cart__item__quantity">
-        <IconButton onClick={handelQuantityIncrement}>
-          <AddCircleIcon />
+        <IconButton onClick={handelQuantityDecrement}>
+          <RemoveCircleIcon fontSize="medium" />
         </IconButton>
         <div type="text" name="quantity" className="quantity__input">
           {props.item.itemQuantity}
         </div>
-        <IconButton onClick={handelQuantityDecrement}>
-          <RemoveCircleIcon fontSize="medium" />
+        <IconButton onClick={handelQuantityIncrement}>
+          <AddCircleIcon />
         </IconButton>
       </div>
       <div className="cart__item__price">${props.item.price}</div>
